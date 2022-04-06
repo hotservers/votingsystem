@@ -1,0 +1,22 @@
+diff --git java/org/l2jmobius/gameserver/GameServer.java java/org/l2jmobius/gameserver/GameServer.java
+index 1f732e3..42155e9 100644
+--- java/org/l2jmobius/gameserver/GameServer.java
++++ java/org/l2jmobius/gameserver/GameServer.java
+@@ -173,6 +173,8 @@
+ import org.l2jmobius.gameserver.ui.Gui;
+ import org.l2jmobius.gameserver.util.Broadcast;
+
++import itopz.com.VDSystemManager;
++
+ public class GameServer
+ {
+ 	private static final Logger LOGGER = Logger.getLogger(GameServer.class.getName());
+@@ -446,6 +448,8 @@
+
+ 		PunishmentManager.getInstance();
+
++		VDSystemManager.getInstance();
++
+ 		Runtime.getRuntime().addShutdownHook(Shutdown.getInstance());
+
+ 		LOGGER.info("IdManager: Free ObjectID's remaining: " + IdManager.size());

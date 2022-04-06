@@ -1,0 +1,22 @@
+diff --git a/L2J_Mobius_09.2_ReturnOfTheQueenAnt/java/org/l2jmobius/gameserver/GameServer.java b/L2J_Mobius_09.2_ReturnOfTheQueenAnt/java/org/l2jmobius/gameserver/GameServer.java
+index 751fba3..06af432 100644
+--- a/L2J_Mobius_09.2_ReturnOfTheQueenAnt/java/org/l2jmobius/gameserver/GameServer.java
++++ b/L2J_Mobius_09.2_ReturnOfTheQueenAnt/java/org/l2jmobius/gameserver/GameServer.java
+@@ -173,6 +173,8 @@
+ import org.l2jmobius.gameserver.ui.Gui;
+ import org.l2jmobius.gameserver.util.Broadcast;
+ 
++import itopz.com.VDSystemManager;
++
+ public class GameServer
+ {
+ 	private static final Logger LOGGER = Logger.getLogger(GameServer.class.getName());
+@@ -446,6 +448,8 @@
+ 		
+ 		PunishmentManager.getInstance();
+ 		
++		VDSystemManager.getInstance();
++		
+ 		Runtime.getRuntime().addShutdownHook(Shutdown.getInstance());
+ 		
+ 		LOGGER.info("IdManager: Free ObjectID's remaining: " + IdManager.size());

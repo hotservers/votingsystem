@@ -1,0 +1,4 @@
+1. Put the itopz folder in java folder.
+2. Put VDSystem.properties file in configs folder.
+3. Apply the patch.
+4. Build and enjoy =)
